@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário</title>
+    <style>
+        /* Fundo com o buquê de flores */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('caminho-para-seu-buque.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 3em;
+        }
+
+        .message {
+            font-family: 'Verdana', sans-serif;
+            font-size: 1.5em;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .surprise-button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            background-color: #ff69b4;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .surprise-button:hover {
+            transform: scale(1.1);
+        }
+
+        .hiddenMessage {
+            display: none;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feliz Aniversário, Meu Amor! 🌸</h1>
+    <p class="message">
+        Hoje é um dia especial para celebrar a pessoa mais incrível que já conheci. 
+        Você é a luz da minha vida, e sou eternamente grato por ter você ao meu lado. 
+        Você é a razão do meu sorriso todos os dias. Amo você! 💖
+    </p>
+    <div class="button-container">
+        <button class="surprise-button" onclick="revealMessage()">Surpresa 🎁</button>
+    </div>
+    <p class="hiddenMessage" id="hiddenMessage">
+        O brilho dos seus olhos ilumina meu mundo,  
+        Sua força e doçura são o que me mantém,  
+        Feliz aniversário, minha eterna paixão,  
+        Você é meu tudo, minha inspiração. 🌷
+    </p>
+
+    <script>
+        function revealMessage() {
+            const hiddenMessage = document.getElementById('hiddenMessage');
+            hiddenMessage.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
